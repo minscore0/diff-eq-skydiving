@@ -30,10 +30,9 @@ def update_display(screen, skydiver_height=1000, camera_angle=0):
 
 def run_simulation(screen, heights, camera_angles):
     for i in range(len(heights)):
-        clock.tick(60)
+        clock.tick(90)
         update_display(screen, float(heights[i]), float(camera_angles[i]))
-        print("here")
-#test
+
 
 running = True
 update_display(screen)
